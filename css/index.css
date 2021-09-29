@@ -36,6 +36,17 @@
   
 }
 
+#quemsomos img{
+  transition: all .3s ease-in-out;
+  
+}
+
+#quemsomos img:hover{
+  transform: scale(1.1);
+  opacity: 80%;
+}
+
+
 /* CSS BOTÃO*/ 
 .middle{
   position: absolute;
@@ -109,12 +120,12 @@
   }
 
   #bannerhorario{
-    background-image:linear-gradient(rgba(55, 61, 60, 0.007),rgba(20, 20, 90, 0.109));
+
     background-size: cover;
-    /* background-attachment: fixed; */
+    background-attachment: fixed;
     font-family: 'Poppins', sans-serif;
     font-weight: 900;
-    color: rgb(9, 29, 20);
+    color: rgba(9, 29, 20, 0.822);
     text-align: center;
     
 }
@@ -151,14 +162,27 @@
 
  
 
-footer{
+footer {
   font-family: 'Poppins', sans-serif; 
+  color: rgba(0, 0, 0, 0.863);
   font-size: 20px;
   text-align: center;
+  background-color: #3d414fd2;
+  margin: 0px;
+  height: 200px;
+  padding: 50px;
   
 }
 
- 
+footer a{
+  color: black;
+}
+
+footer a:hover{
+  color: black;
+  
+  
+}
 
 .modal {
   position: fixed;
