@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding: 5.625rem;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .navbar a {
+    color: white !important;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+
+#banner{
+    background-image: url(../img/fundo.jpg);
+    height: calc(100vh - 56px);
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom:0px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    color: white;
+    padding: 30px;
+}
+
+
+
+#banner h1{
+  font-weight: 900;
+  color: white;
+  
+}
+
+/* CSS BOTÃO*/ 
+.middle{
+  position: absolute;
+  padding-left: 500px;
+  top: 50px;
+  left: 50px;
+  transform: translate(-50%,-50%);
+}
+
+#banner .btn{
+ 
+  position: relative;
+  width: 150px;
+  height: 50px;
+  display: block;
+  color: white;
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  margin: 0px 20px;
+  border: 2px solid #ff7675;
+  padding: 10px;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 1s all ease;
+}
+
+.btn::before{
+  background: #ff7675;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: -1;
+  transition: all 0.6s ease;
+}
+
+.btn1::before{
+  width: 0%;
+  height: 100%;
+}
+
+.btn1:hover::before{
+  width: 100%;
+}
+
+/* FIM CSS BOTÃO*/ 
+
+.marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+
+  }
+  .marketing h2 {
+    font-weight: 900;
+    margin: 20px 0px 20px 0px;
+  }
+  /* rtl:begin:ignore */
+  .marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+  }
+
+
+  .marketing img{
+    width: 140px;
+    height: 140px;
+   
+    
+  }
+
+  #bannerhorario{
+    background-image:linear-gradient(rgba(55, 61, 60, 0.007),rgba(20, 20, 90, 0.109));
+    background-size: cover;
+    /* background-attachment: fixed; */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    color: rgb(9, 29, 20);
+    text-align: center;
+    
+}
+
+#bannerhorario li{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    justify-content: flex-start;
+    list-style: none;
+    border-right: 1px black;
+   
+}
+
+#bannerhorario h2{
+  margin: 20px 0px 20px 0px;
+  font-weight: 900;
+  text-align: center;
+    
+}
+
+#bannerhorario .titulo1{
+  border-right: 1px solid black;
+}
+
+#bannerhorario .lista2{
+  margin-left: 2px;
+}
+
+
+#bannerhorario img{
+  width: 32px;
+  height: 32px;
+}
+
+ 
+
+footer{
+  font-family: 'Poppins', sans-serif; 
+  font-size: 20px;
+  text-align: center;
+  
+}
+
+ 
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: rgba(0,0,0,0.8);
+  z-index: 99999;
+  opacity:0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+}
+
+.modal:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal > div {
+  width: 400px;
+  position: relative;
+  margin: 10% auto;
+  padding: 15px 20px;
+  background: #fff;
+}
